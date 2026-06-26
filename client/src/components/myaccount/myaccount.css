@@ -1,0 +1,212 @@
+/* Container for the entire My Account page */
+.myaccount_container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+}
+
+/* Page title styling */
+.myaccount_container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* User information and wishlist sections */
+.user_details,
+.wishlist_section {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Headers within sections */
+.user_details h3,
+.wishlist_section h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #007185;
+}
+
+/* Styling for user information paragraphs */
+.user_details p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Container for saved items */
+.saved_items_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Styling for each individual saved product item */
+.saved_item_link {
+    text-decoration: none;
+    color: inherit;
+    /* This will contain the img and text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.saved_item {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    transition: transform 0.2s ease;
+    text-align: center;
+    /* UPDATED: Use flexbox */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+}
+
+/* Hover effect for saved items */
+.saved_item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.saved_item img {
+    max-width: 100%;
+    /* UPDATED: Fixes layout */
+    height: 200px; /* FIX 1: Set a fixed height */
+    object-fit: contain; /* FIX 2: Make image fit, not stretch */
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.saved_item p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* NEW: Style for the remove button */
+.remove_button {
+    background-color: #f3f3f3;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 120px; /* Give it a consistent width */
+    align-self: center; /* Center the button */
+    transition: background-color 0.2s;
+    /* FIX 3: This pushes the button to the bottom of the card */
+    margin-top: auto; 
+}
+
+.remove_button:hover {
+    background-color: #e0e0e0;
+}
+
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .myaccount_container {
+        padding: 10px;
+    }
+
+    .user_details,
+    .wishlist_section {
+        padding: 15px;
+    }
+
+    .saved_items_list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .saved_item {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+.order_container {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    background-color: #fff;
+}
+
+.order_header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f3f3f3;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.order_header p {
+    margin: 0;
+}
+
+.order_header p:first-child {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.product_in_order {
+    display: flex;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.product_in_order:last-child {
+    border-bottom: none;
+}
+
+.product_in_order img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+.product_details h4 {
+    margin: 0 0 5px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #007185;
+}
+
+.product_details p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.account_actions {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.delete_account_btn {
+    background-color: #d9534f; /* A shade of red */
+    color: white;
+    border: 1px solid #d43f3a;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.delete_account_btn:hover {
+    background-color: #c9302c;
+    border-color: #ac2925;
+}

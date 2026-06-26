@@ -1,0 +1,227 @@
+.cart_section {
+    width: 100%;
+    padding: 80px 0 150px 0; /* Adjusted padding for top space and bottom space */
+    min-height: 100vh;
+    background-color: #f3f3f3; /* Added a light background color for context */
+}
+
+.cart_section .cart_container {
+    width: 95%;
+    max-width: 1200px; /* Added max-width for very large screens */
+    margin: 0 auto;
+    display: flex;
+    padding: 20px;
+    background-color: #fff; /* Gave the container a white background */
+    border-radius: 4px;
+}
+
+.cart_container .left_cart {
+    flex: .5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left_cart img {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.left_cart .cart_btn {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cart_btn button {
+    margin-right: 20px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.cart_btn .cart_btn1 {
+    background-color: #FFD814;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #0F1111;
+    width: 200px;
+    letter-spacing: .5px;
+    font-size: 14px;
+    box-shadow: 0 0 10px -5px rgba(0, 0, 0, .5);
+}
+
+.cart_btn .cart_btn1:hover {
+    background-color: #f1cc13;
+}
+
+.cart_btn .cart_btn2 {
+    background-color: #FFA41C;
+    letter-spacing: .5px;
+    font-size: 14px;
+    color: #0F1111;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    width: 200px;
+    box-shadow: 0 0 10px -5px rgba(0, 0, 0, .5);
+}
+
+.cart_btn .cart_btn2:hover {
+    background-color: #ec9615;
+}
+
+.cart_container .right_cart {
+    flex: 0.5;
+    /* Removed border since the whole container is now boxed */
+    padding: 10px;
+}
+
+.right_cart h3 {
+    font-weight: 500;
+    font-size: 23px;
+    margin-top: 0;
+}
+
+.right_cart h4 {
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.right_cart .mrp {
+    margin-top: 10px;
+}
+
+.right_cart p {
+    color: #565959;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.discount_box h5 {
+    color: #B12704;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 0;
+}
+
+.discount_box h4 {
+    font-size: 15px;
+    color: #007185;
+}
+
+.right_cart .description {
+    font-weight: 600;
+    color: #111;
+    font-size: 16px;
+    margin-top: 3px;
+}
+
+
+/* media query */
+@media (max-width:778px) {
+    .cart_section .cart_container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cart_container .left_cart,
+    .cart_container .right_cart {
+        flex: 1;
+    }
+    .cart_container .right_cart {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:500px) {
+    .cart_btn .cart_btn1,
+    .cart_btn .cart_btn2 {
+        width: 160px;
+    }
+    .left_cart .cart_btn {
+        justify-content: center;
+    }
+}
+
+
+.star-rating {
+    color: #f8c822; /* Amazon gold color */
+    font-size: 1.2rem;
+}
+
+.reviews_section {
+    width: 95%;
+    max-width: 1200px; /* Match the container width */
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.reviews_section h2,
+.review_form_container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.reviews_summary {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.reviews_list {
+    margin-top: 20px;
+}
+
+.review_item {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.review_item:last-child {
+    border-bottom: none;
+}
+
+.review_item strong {
+    font-size: 1rem;
+}
+
+.review_date {
+    font-size: 0.8rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.review_form_container {
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.form_group {
+    margin-bottom: 15px;
+}
+
+.form_group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form_group select,
+.form_group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-width: 500px;
+}
+
+.review_status {
+    margin-top: 10px;
+    font-weight: bold;
+}

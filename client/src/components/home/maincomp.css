@@ -1,0 +1,82 @@
+/* Container for the entire main page */
+.main_container {
+    max-width: 1500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f3f3f3;
+}
+
+/* Styling for the product sections (e.g., Deal of the Day) */
+.deal_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.deal_section h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #111;
+}
+
+.deal_section .view_all_button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #232f3e;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.deal_section .view_all_button:hover {
+    background-color: #38475c;
+}
+
+/* Styling for the product carousels (adjust as needed) */
+.products_carousel {
+    padding: 20px 0;
+}
+
+/* Styling for the right sidebar banner */
+.right_sidebar_banner {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.right_sidebar_banner img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.right_sidebar_banner h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #111;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .main_container {
+        padding: 10px;
+    }
+    .deal_section {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    .deal_section h3 {
+        margin-bottom: 10px;
+    }
+}
